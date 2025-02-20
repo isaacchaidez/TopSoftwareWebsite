@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TopSoftware - Innovative Digital Solutions</title>
-  
-  {% load static %}
   <meta name="description" content="TopSoftware delivers innovative digital solutions including web development, mobile apps, SaaS platforms, and AI chatbots.">
 
   <!-- Google Font: Montserrat -->
@@ -16,7 +15,7 @@
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="stylesheet" href="{% static 'navbar.css' %}">
   <script src="{% static 'navbar.js' %}"></script>
-
+  {% include 'navbar.html' %}
   <!-- Inline Custom Styles -->
   <style>
     :root {
@@ -400,7 +399,7 @@
   </style>
 </head>
 <body>
-  {% include 'navbar.html' %}
+
   {% include 'hero.html' %}
 
   <!-- About Section -->
